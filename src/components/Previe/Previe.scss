@@ -1,0 +1,138 @@
+.previe {
+    padding: 100px 0;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .previe__text {
+            position: relative;
+
+            .bg__img {
+                position: absolute;
+                top: 90px;
+                left: -110px;
+                bottom: 0;
+                z-index: -1;
+                transform: scale(1.5) translateX(-25%);
+            }
+
+            .previe__title {
+                color: rgb(0, 0, 0);
+                text-align: left;
+                letter-spacing: 6px;
+                font: 900 40px/40px "Lato", sans-serif;
+            }
+
+            .previe__descr {
+                margin: 10px 0 30px;
+                color: rgb(0, 0, 0);
+                text-align: left;
+                letter-spacing: 3px;
+                font: 600 20px 'Open Sans', sans-serif;
+            }
+
+            .previe__btn {
+                padding: 4px 19px;
+                border: 2px solid black;
+                letter-spacing: 1.5px;
+                color: black;
+                font: 400 16px 'Open Sans', sans-serif;
+                transition: 0.4s;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: rgb(255, 255, 255);
+                    background-color: black;
+                }
+            }
+        }
+
+        .previe__icon {}
+    }
+}
+
+@media (max-width: 1200px) {
+    .previe {
+        .container {
+            .previe__text {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .previe {
+        .container {
+            .previe__text {
+                .bg__img {
+                    top: 70px;
+                    left: -100%;
+                }
+
+                .previe__title {
+                    letter-spacing: 4px;
+                    font: 900 30px/30px "Lato", sans-serif;
+                }
+
+                .previe__descr {
+                    letter-spacing: 2px;
+                    font: 600 18px 'Open Sans', sans-serif;
+                }
+
+                .previe__btn {
+                    font: 400 14px 'Open Sans', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .previe {
+        .container {
+            flex-direction: column;
+            gap: 60px;
+
+            .previe__text {
+                width: 100%;
+                position: relative;
+
+                .bg__img {
+                    left: -100px;
+                }
+            }
+
+            .previe__icon {
+                margin-left: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .previe {
+        .container {
+            .previe__text {
+                .previe__title {
+                    font: 900 30px/30px "Lato", sans-serif;
+                }
+
+                .previe__descr {
+                    font: 600 16px 'Open Sans', sans-serif;
+                }
+
+                .previe__btn {
+                    padding: 2px 14px;
+                    font: 400 14px 'Open Sans', sans-serif;
+                }
+            }
+
+            .previe__icon {
+                margin-left: 80px;
+            }
+        }
+    }
+}

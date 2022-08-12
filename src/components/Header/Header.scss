@@ -1,0 +1,94 @@
+.header {
+    position: relative;
+    box-shadow: 0 1px 20px 0 rgb(68 68 68 / 10%);
+
+    .container {
+        height: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav {
+            display: flex;
+            gap: 20px;
+            position: relative;
+            padding-right: 15px;
+
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                a {
+                    color: #444444;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font: 500 11px 'Hind';
+                }
+
+                .arrow {
+                    right: 0;
+                    position: absolute;
+                    cursor: pointer;
+                    margin-left: 4px;
+                    width: 14px;
+                height: 14px;
+
+                    transition: 0.5s;
+                }
+
+                .active_row {
+                    transform: rotate(180deg);
+                }
+
+            }
+        }
+        .burgerMenu {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        .container {
+            .nav {
+                display: none;
+            }
+            .burgerMenu {
+                display: flex;
+                flex-direction: column;
+                width: 30px;
+                height: 20px;
+                gap: 5px;
+                transform: scale(-1, 1);
+                span {
+                    height: 4px;
+                    transition: 0.4s;
+                    background-color: black;
+                    &:nth-child(1){ 
+                        width: 60%;
+                    }
+                    &:nth-child(2){ 
+                        width: 70%;
+                    }
+                    &:nth-child(3){ 
+                        width: 80%;
+                    }
+                }
+                &:hover > span {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,39 @@
+.dropDown__language {
+    position: absolute;
+    right: -10px;
+    top: 30px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    z-index: 11;
+    box-shadow: 0 1px 20px 0 rgb(68 68 68 / 10%);
+
+    .lui {
+        justify-content: flex-end;
+        display: flex;
+
+        .accordion__button {
+            border: none;
+            color: #444444;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font: 500 11px 'Hind';
+        }
+    }
+}
+@media (max-width: 767px) {
+    .dropDown__language {
+        left: 0;
+        right: 0;
+        top: 40px;
+        .lui {
+            justify-content: flex-start;
+            padding: 0 10px !important;
+            .accordion__button {
+                padding: 5px;
+            }
+        }
+    }
+}
