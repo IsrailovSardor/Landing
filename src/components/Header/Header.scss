@@ -1,6 +1,11 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     box-shadow: 0 1px 20px 0 rgb(68 68 68 / 10%);
+    z-index: 10000;
+    background-color: white;
 
     .container {
         height: 77px;
@@ -19,7 +24,7 @@
                 align-items: center;
                 list-style: none;
 
-                a {
+                a, p {
                     color: #444444;
                     text-transform: uppercase;
                     letter-spacing: 3px;
@@ -32,8 +37,7 @@
                     cursor: pointer;
                     margin-left: 4px;
                     width: 14px;
-                height: 14px;
-
+                    height: 14px;
                     transition: 0.5s;
                 }
 
@@ -55,6 +59,7 @@
         .container {
             .nav {
                 display: none;
+               
             }
             .burgerMenu {
                 display: flex;
@@ -84,11 +89,4 @@
         }
     }
     
-}
-
-@media (max-width: 575px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
-    }
 }

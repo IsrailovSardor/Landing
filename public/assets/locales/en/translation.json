@@ -8,9 +8,34 @@
         "Contacts",
         "Lenguage"
     ],
-    "previe" : [
+    "previe": [
         "Website development",
         "We have been building picture perfect websites since 2022",
-        "TELL US ABOUT YOUR PROJEcT"   
-    ]
+        "TELL US ABOUT YOUR PROJEcT"
+    ],
+    "about": [
+        "WE ARE HAZEL",
+        "ABOUT US",
+        "HAZEL web design studio is a team of professionals with vast experience. In the field of web design, our mission is to create websites that are effective marketing tools for our clients.",
+        "Years of work",
+        "Made projects",
+        "In our team"
+    ],
+    "services": {
+        "head" : [
+            "OUR SERVICES"
+        ],
+        "title": [
+            "IT outsourcing",
+            "Design development",
+            "Mobile Application Development",
+            "Web Application Development"
+        ],
+        "description": [
+            "Our company excels at absolutely any task that a business needs to outsource. Our clients are always satisfied and their names speak volumes about our reputation.",
+            "You can create the most functional IT solution, but without a great design, the end user cannot be attracted. The design should be simple, understandable, and perfect.",
+            "Smartphones and tablets have become an integral part of the life of a modern person, and for business - a great opportunity to reach out to a potential client at any time of the day or night.",
+            "In the modern world, web applications play a huge role. Now you can no longer imagine the information space without news blogs, online stores and social networks."
+        ]
+    }
 }

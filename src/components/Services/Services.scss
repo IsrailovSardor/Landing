@@ -1,0 +1,96 @@
+.services {
+    padding: 100px 0;
+
+    .container {
+        .services__title {
+            text-align: center;
+            color: #303030;
+            letter-spacing: 1px;
+            text-transform: none;
+            font: 500 24px/1.3rem 'Hind', 'Arial', 'sans-serif';
+        }
+
+        .services__block {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 50px;
+            margin-top: 80px;
+
+            .item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                text-align: center;
+
+                .item-icons {
+                    position: relative;
+                    width: 45px;
+                    height: 45px;
+                    margin-bottom: 26px;
+
+                    .item-icon__show {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        max-width: 45px;
+                        height: auto;
+                        opacity: 1;
+                    }
+
+                    .item-icon__hide {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 45px;
+                        height: auto;
+                        opacity: 0;
+                    }
+                }
+
+                .item-title {
+                    letter-spacing: 2px;
+                    color: #595959;
+                    font: 700 12px/1.2em 'Raleway', sans-serif;
+                    margin-bottom: 18px;
+                }
+
+                .item-descr {
+                    font-family: 'Mulish', 'Arial', 'sans-serif';
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    color: #595959;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        .container {
+            .services__block {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .services {
+        .container {
+            .services__block {
+                grid-template-columns: 1fr;
+
+                .item {
+                    margin: auto;
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}

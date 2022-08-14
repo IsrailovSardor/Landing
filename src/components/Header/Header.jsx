@@ -28,8 +28,8 @@ const Header = () => {
               <a href={item.href}>{t(`navLinks.${index}`)}</a>
             </li>
           ))}
-          <li onClick={() => serDropDown(!dropDown)}>
-            <a href="/#">{t("navLinks.6")}</a>
+          <li onClick={() => serDropDown(!dropDown)} >
+          <p>{t("navLinks.6")}</p>
             <ArrowUp className={`arrow ${dropDown ? "active_row" : ""}`} />
           </li>
           <Language dropDown={dropDown} serDropDown={serDropDown} />

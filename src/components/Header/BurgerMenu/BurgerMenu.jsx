@@ -17,7 +17,7 @@ const BurgerMenu = ({ dropDown, serDropDown, links }) => {
         ))}
         <li onClick={() => serDropDown(!dropDown)}>
           <Language dropDown={dropDown} serDropDown={serDropDown} />
-          <a href="/#">{t("navLinks.6")}</a>
+          <p>{t("navLinks.6")}</p>
           <ArrowUp className={`arrow ${dropDown ? "active_row" : ""}`} />
         </li>
       </ul>

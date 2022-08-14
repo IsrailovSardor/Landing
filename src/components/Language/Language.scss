@@ -15,7 +15,9 @@
         display: flex;
 
         .accordion__button {
+            width: 100%;
             border: none;
+            text-align: right;
             color: #444444;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -33,6 +35,7 @@
             padding: 0 10px !important;
             .accordion__button {
                 padding: 5px;
+                text-align: left;
             }
         }
     }

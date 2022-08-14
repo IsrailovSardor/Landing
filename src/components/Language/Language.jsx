@@ -31,7 +31,7 @@ const Language = ({ dropDown, serDropDown }) => {
       {dropDown ? (
         <div className="dropDown__language">
           {languages.map(({ code, name, country_code, img }) => (
-            <li key={country_code} className="lui">
+            <div key={country_code} className="lui">
               <button
                 className="accordion__button"
                 onClick={() => {
@@ -41,7 +41,7 @@ const Language = ({ dropDown, serDropDown }) => {
               >
                 {name}
               </button>
-            </li>
+            </div>
           ))}
         </div>
       ) : null}
