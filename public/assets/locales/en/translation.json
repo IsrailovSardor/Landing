@@ -37,5 +37,13 @@
             "Smartphones and tablets have become an integral part of the life of a modern person, and for business - a great opportunity to reach out to a potential client at any time of the day or night.",
             "In the modern world, web applications play a huge role. Now you can no longer imagine the information space without news blogs, online stores and social networks."
         ]
-    }
+    },
+    "interested": [
+        "INTERESTED IN OUR SERVICES?",
+        "Order"
+    ],
+    "ourWork" : [
+        "OUR LATEST WORK",
+        "VIEW ALL"
+    ]
 }

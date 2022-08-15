@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Interested.scss";
-import second from "../../assets/images/interestid/first.webp";
+import { useTranslation } from "react-i18next";
 const Interested = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -10,29 +10,31 @@ const Interested = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+const {t } = useTranslation()
   return (
     <div className="interested">
       <div className="bgs">
         <div
           className="bg-first"
-          style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+          style={{ transform: `translateY(-${(offsetY - 1000) * 0.5}px)` }}
         ></div>
         <div
           className="bg-second"
-          style={{ transform: `translateY(${(offsetY - 2000) * 0.3}px)` }}
+          style={{ transform: `translateY(${(offsetY - 2000) * 0.5}px)` }}
         ></div>
         <div
           className="bg-fourth"
-          style={{ transform: `translateY(${(offsetY - 500) * 0.3}px)` }}
+          style={{ transform: `translateY(-${(offsetY - 1700) * 0.5}px)` }}
         ></div>
         <div
           className="bg-third"
-          style={{ transform: `translateY(-${(offsetY - 2000) * 0.3}px)` }}
+          style={{ transform: `translateY(${(offsetY - 2000) * 0.5}px)` }}
         ></div>
       </div>
       <div className="container">
-        <h1 className="interested__title">ЗАИНТЕРЕСОВАНЫ НАШИМИ УСЛУГАМИ?</h1>
-        <button className="interested__bnt">Заказать</button>
+        <h1 className="interested__title">{t("interested.0")}</h1>
+        <button className="interested__bnt">{t("interested.1")}</button>
       </div>
     </div>
   );
