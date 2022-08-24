@@ -22,7 +22,7 @@
         "In our team"
     ],
     "services": {
-        "head" : [
+        "head": [
             "OUR SERVICES"
         ],
         "title": [
@@ -42,8 +42,33 @@
         "INTERESTED IN OUR SERVICES?",
         "Order"
     ],
-    "ourWork" : [
+    "ourWork": [
         "OUR LATEST WORK",
         "VIEW ALL"
+    ],
+    "ourClient": {
+        "head": [
+            "OUR CLIENTS FEEDBACK"
+        ],
+        "cleint1": [
+            "During the cooperation, the company managed to recommend itself as a reliable and professional partner, the services turned out to be at the highest professional level. The professionalism of the employees of LLC Novasoft has a high quality of oil and gas service",
+            "Asel Kurmanbekova"
+        ],
+        "cleint2": [
+            "This company has managed to establish itself as a reliable and professional partner. During the period of cooperation, we were provided with services at a professional level.",
+            "Ismailova Jamilya"
+        ]
+    },
+    "form": [
+        "We would like to know you",
+        "CONTACT US",
+        "Name",
+        "Mail",
+        "Messages",
+        "Send",
+        "The field is required",
+        "Minimum 4 characters",
+        "Please enter a valid email",
+        "Minimum 10 characters"
     ]
 }

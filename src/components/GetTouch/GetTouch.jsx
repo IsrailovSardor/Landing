@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import "./GetTouch.scss";
@@ -22,6 +23,7 @@ const GetTouch = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
   return (
     <div className="getTouch">
         <div
@@ -29,20 +31,20 @@ const GetTouch = () => {
           style={{ transform: `translateY(${(offsetY - 3604 ) * 0.5}px)` }}
         ></div>
       <div className="container">
-        <h1 className="getTouch__title">We would love to know you</h1>
-        <p className="getTouch__descr">GET IN TOUCH WITH US</p>
+        <h1 className="getTouch__title">{t(`form.0`)}</h1>
+        <p className="getTouch__descr">{t(`form.1`)}</p>
         <form action="#" onSubmit={handleSubmit(onSubmit)}>
           <div className="from__one">
             <div className="input__block">
               <input
                 type="text"
-                placeholder="Имя"
+                placeholder={t(`form.2`)}
                 className="input"
                 {...register("firstName", {
-                  required: "Поле обязательно к заполнению",
+                  required: `${t(`form.6`)}`,
                   minLength: {
                     value: 4,
-                    message: "Минимум 4 символов",
+                    message: `${t(`form.7`)}`,
                   },
                 })}
               />
@@ -53,13 +55,13 @@ const GetTouch = () => {
             <div className="input__block">
               <input
                 type="text"
-                placeholder="Почта"
+                placeholder={t(`form.3`)}
                 className="input"
                 {...register("Email", {
-                    required: "Поле обязательно к заполнению",
+                  required: `${t(`form.6`)}`,
                     pattern:  {
                       value :  /^\S+@\S+$/i,
-                    message: "Введите коректно почту",
+                    message: `${t(`form.7`)}`,
                 }
                  
                 })}
@@ -74,12 +76,12 @@ const GetTouch = () => {
               type="text"
               rows="10"
               className="input"
-              placeholder="Сообщения"
+              placeholder={t(`form.4`)}
               {...register("message", {
-                required: "Поле обязательно к заполнению",
+                required: `${t(`form.6`)}`,
                 minLength: {
                   value: 10,
-                  message: "Минимум 10 символов",
+                  message: `${t(`form.8`)}`,
                 },
               })}
             ></textarea>
@@ -87,7 +89,7 @@ const GetTouch = () => {
               <span className="error">{errors?.message?.message}</span>
             )}
           </div>
-          <button type="submit">Далее</button>
+          <button type="submit">{t(`form.5`)}</button>
         </form>
       </div>
     </div>
