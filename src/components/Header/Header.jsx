@@ -29,7 +29,7 @@ const Header = () => {
             </li>
           ))}
           <li onClick={() => serDropDown(!dropDown)} >
-          <p>{t("navLinks.6")}</p>
+          <p>{t("navLinks.")}</p>
             <ArrowUp className={`arrow ${dropDown ? "active_row" : ""}`} />
           </li>
           <Language dropDown={dropDown} serDropDown={serDropDown} />
